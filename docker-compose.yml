@@ -2,7 +2,7 @@ version: '2'
 services:
     topeserver:
         build: .
-        container_name: "topeserver"
+        container_name: "UserManager"
         image: debian/latest
         environment:
             - NODE_ENV=development
@@ -12,7 +12,6 @@ services:
             - /tmp/.X11-unix:/tmp/.X11-unix:rw
         ports:
             - 3000:3000
-            - 9000:9000
         links:
             - mongodb
         depends_on:
