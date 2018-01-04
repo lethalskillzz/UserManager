@@ -1,8 +1,8 @@
 version: '2'
 services:
-    topeserver:
+    usermanager:
         build: .
-        container_name: "UserManager"
+        container_name: "usermanager"
         image: debian/latest
         environment:
             - NODE_ENV=development
